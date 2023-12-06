@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D7 JavaScript</title>
+</head>
+
+<body>
+    <!-- Forma za vnesuvanje kniga -->
+
+    <label for="title">Наслов:</label>
+    <input type="text" id="title" required>
+
+    <label for="author">Автор:</label>
+    <input type="text" id="author" required>
+
+    <label for="year">Година:</label>
+    <input type="text" id="year" required>
+
+    <button type="button" onclick="addBook()">Додај книга</button>
+
+    <hr>
+    <br>
+    <!-- Tabela za prikazuvanje na lista od knigi -->
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Наслов</th>
+                <th>Автор</th>
+                <th>Година</th>
+                <th>Избриши</th>
+            </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+    </table>
+
+    <script type="text/javascript" src="D7.js"></script>
+</body>
+
+</html>
